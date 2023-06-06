@@ -1,0 +1,19 @@
+.kasa-header {
+    display:flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;;
+}
+
+.kasa-header-lien a:first-child {
+    text-decoration: underline;
+}
+
+.kasa-header-lien a {
+    text-decoration-line: none;
+    color: #FF6060;
+    font-size: 24px;
+    padding-left: 60px;
+}

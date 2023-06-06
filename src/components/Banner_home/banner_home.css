@@ -1,0 +1,23 @@
+.kasa-banner {
+    display:flex;
+    font-family: Montserrat;
+    padding-top: 55px;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.kasa-banner-title {
+    position: absolute;
+    padding-top: 50px;
+    font-size:48px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.kasa-banner-img {
+    object-fit: cover;
+    width:100%;
+    height: 230px;
+    border-radius: 25px;
+}

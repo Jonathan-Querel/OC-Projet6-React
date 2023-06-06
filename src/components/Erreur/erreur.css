@@ -1,0 +1,22 @@
+.kasa-erreur {
+    color: #FF6060;
+    text-align: center;
+    font-family: Montserrat;
+    margin-bottom: 140px;
+}
+
+.kasa-erreur-404 {
+    font-size: 288px;
+    font-weight: 700;
+}
+
+.kasa-erreur-text {
+    padding-bottom: 140px;
+    font-size: 36px;
+}
+
+.kasa-erreur-lien {
+    text-decoration: underline;
+    color: #FF6060;
+    font-size: 18px;
+}

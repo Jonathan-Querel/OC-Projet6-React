@@ -1,0 +1,17 @@
+.kasa-footer {
+    background-color:black;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.kasa-footer-logo {
+    padding-top: 66px;
+    color:white;
+}
+
+.kasa-footer-title {
+    color: white;
+    font-size: 24px;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
