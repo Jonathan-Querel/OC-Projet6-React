@@ -11,7 +11,7 @@ import "./styles/index.css";
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Header img="assets/logo_header_kasa.png" />
+      <Header img="../assets/logo_header_kasa.png" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Apropos" element={<Apropos />} />
@@ -19,7 +19,7 @@ ReactDOM.render(
       </Routes>
       <Footer
         titre_footer="© 2020 Kasa. All rights reserved"
-        img_footer="assets/logo_footer_kasa.png"
+        img_footer="../assets/logo_footer_kasa.png"
       />
     </Router>
   </React.StrictMode>,
