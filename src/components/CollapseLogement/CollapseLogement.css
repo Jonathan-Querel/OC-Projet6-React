@@ -1,0 +1,48 @@
+/*.kasa-carrousel-chevron {
+    background-color: #15DEA5;
+
+    animation: kasa-carrousel-chevron 3s linear infinite;
+}
+
+@keyframes kasa-carrousel-chevron {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}*/
+
+
+.kasa-group-collapse-logement {
+    display:flex;
+    justify-content: space-between;
+}
+
+.kasa-collapse-logement {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px 10px 5px 5px;
+    width: 580px;
+}
+
+.kasa-collapse-logement-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-left: 10px;
+    font-size: 18px;
+    padding: 10px 20px 10px 10px;
+}
+
+.kasa-collapse-logement-texte {
+    color:#FF6060;
+    font-size: 18px;
+    background-color: #F7F7F7;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+

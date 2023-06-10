@@ -1,4 +1,4 @@
-import Erreur from "../../components/Erreur/erreur";
+import Erreur from "../../components/Erreur/Erreur";
 
 function Error() {
   return (

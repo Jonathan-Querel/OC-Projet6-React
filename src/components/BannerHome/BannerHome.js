@@ -1,4 +1,4 @@
-import "./banner_home.css";
+import "./BannerHome.css";
 
 function Banner(props) {
   const { titre_banner_home, img_banner_home } = props;

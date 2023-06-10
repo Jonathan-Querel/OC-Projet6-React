@@ -1,4 +1,4 @@
-import "./banner_a_propos.css";
+import "./BannerAPropos.css";
 
 function Banner_a_propos(props) {
   const { img_banner_a_propos } = props;

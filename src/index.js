@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/header";
-import Home from "./pages/Home/home.js";
-import Apropos from "./pages/Apropos/apropos";
-import Error from "./pages/Error/error";
-import Footer from "./components/Footer/footer";
-import "./styles/index.css";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home.js";
+import APropos from "./pages/APropos/APropos";
+import Error from "./pages/Error/Error";
+import Footer from "./components/Footer/Footer";
+import FicheLogement from "./pages/FicheLogement/FicheLogement.js";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,7 +14,8 @@ ReactDOM.render(
       <Header img="../assets/logo_header_kasa.png" />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Apropos" element={<Apropos />} />
+        <Route path="/APropos" element={<APropos />} />
+        <Route path="/FicheLogement/:id" element={<FicheLogement />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer

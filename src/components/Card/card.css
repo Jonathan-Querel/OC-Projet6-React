@@ -1,34 +1,45 @@
-
+.kasa-group-logement {
+    margin-left: 100px;
+    margin-right:100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+}
 .kasa-group-card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    margin-left: 100px;
-    margin-right:100px;
-    background-color: #F7F7F7;
-    border-radius: 25px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
+    width: 33%;
 }
 
 .kasa-card {
-    width: 26%;
-    height: 340px;
+    display:flex;
     margin-top: 50px;
     margin-bottom: 50px;
-    background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 10px;
+    justify-content: space-around;
 }
 
 .kasa-card-title {
-    /*justify-content: space-around;
-    align-items: flex-end; fonctionne pas pourquoi ?*/
-    padding-top: 230px;
-    padding-left: 20px;
-    color: #FFFFFF;
-    width:100px;
+    position: absolute;
+    width:200px;
+    color:#FFFFFF;
+    padding-top: 250px;
+    font-weight: 500;
+    padding-right: 100px;
+}
+
+.kasa-card-img {
+    width:340px;
+    height:340px;
+    object-fit: cover;
+    border-radius: 10px;
 }

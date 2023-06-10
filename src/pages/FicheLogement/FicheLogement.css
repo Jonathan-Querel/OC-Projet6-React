@@ -1,0 +1,36 @@
+.fiche-logement {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.fiche-logement-carrousel {
+    display:flex;
+    align-items: center;
+}
+
+.kasa-logement-group-description {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kasa-logement-group-profil {
+    display:flex;
+    flex-direction: row;
+}
+
+.kasa-logement-nom-profil {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+    width:100px;
+    text-align: right;
+}
+
+.kasa-logement-photo-profil {
+    width: 65px;
+    height: 65px;
+    margin-left: 10px;
+    border-radius: 75px;
+    object-fit: cover;
+}
