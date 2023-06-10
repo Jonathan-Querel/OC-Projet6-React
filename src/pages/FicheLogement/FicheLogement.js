@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 
 import Tag from "../../components/Tag/Tag.js";
-import Collapse from "../../components/Collapse/Collapse.js";
+
 import Logements from "../../Logements.js";
 import "./FicheLogement.css";
+import CollapseLogement from "../../components/CollapseLogement/CollapseLogement.js";
 
 // const textes = [
 //   {
@@ -30,15 +31,11 @@ function Fiche_logement() {
       <div className="fiche-logement">
         <div className="kasa-logement-group-description">
           <div className="kasa-logement-group-titre">
-            <div className="kasa-carrousel-titre">
-              Cozy loft on the Canal Saint-Martin
-            </div>
-            <div className="kasa-carrousel-sous-titre">
-              Paris, île-de-France
-            </div>
+            <p className="kasa-carrousel-titre">{Logement.title}</p>
+            <p className="kasa-carrousel-sous-titre">{Logement.location}</p>
           </div>
           <div className="kasa-logement-group-profil">
-            <p className="kasa-logement-nom-profil">Alexandre Dumas</p>
+            <p className="kasa-logement-nom-profil">{Logement.host.name}</p>
             <img
               className="kasa-logement-photo-profil"
               src={Logement.host.picture}
@@ -56,30 +53,47 @@ function Fiche_logement() {
             <Tag type_tag="Paris 10" titre_tag="Paris 10" /> */}
           </div>
           <div className="kasa-tag-star">
-            <img src="../assets/star_red.png" alt="étoile rouge"></img>
-            <img src="../assets/star_red.png" alt="étoile rouge"></img>
-            <img src="../assets/star_red.png" alt="étoile rouge"></img>
-            <img src="../assets/star_grey.png" alt="étoile grise"></img>
-            <img src="../assets/star_grey.png" alt="étoile grise"></img>
+            {Logement.rating < 1 ? (
+              <img src="../assets/star_grey.png" alt="étoile grise"></img>
+            ) : (
+              <img src="../assets/star_red.png" alt="étoile rouge"></img>
+            )}
+            {Logement.rating < 2 ? (
+              <img src="../assets/star_grey.png" alt="étoile grise"></img>
+            ) : (
+              <img src="../assets/star_red.png" alt="étoile rouge"></img>
+            )}
+            {Logement.rating < 3 ? (
+              <img src="../assets/star_grey.png" alt="étoile grise"></img>
+            ) : (
+              <img src="../assets/star_red.png" alt="étoile rouge"></img>
+            )}
+            {Logement.rating < 4 ? (
+              <img src="../assets/star_grey.png" alt="étoile grise"></img>
+            ) : (
+              <img src="../assets/star_red.png" alt="étoile rouge"></img>
+            )}
+            {Logement.rating < 5 ? (
+              <img src="../assets/star_grey.png" alt="étoile grise"></img>
+            ) : (
+              <img src="../assets/star_red.png" alt="étoile rouge"></img>
+            )}
           </div>
         </div>
         <div className="kasa-group-collapse-logement">
           <div className="kasa-collapse-logement-description">
-            <Collapse
+            <CollapseLogement
               type_collapse_logement="Description"
               titre_collapse_logement="Description"
               description_collapse_logement="Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au coeur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à 1 station de la gare de l'est (7 minutes à pied)."
             />
           </div>
           <div className="kasa-collapse-logement-equipement">
-            <Collapse
+            <CollapseLogement
               type_collapse_logement="Equipements"
               titre_collapse_logement="Équipements"
               description_collapse_logement="Climatisation Wifi Cuisine Espace de travail Fer à repasser Sèche-cheveux Cintres"
             />
-            <div className="kasa-carrousel-chevron">
-              <i className="fa-solid fa-chevron-up"></i>
-            </div>
           </div>
         </div>
       </div>
