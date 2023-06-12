@@ -23,7 +23,7 @@
     color: #FF6060;
     font-size: 18px;
     font-weight: 500;
-    width:100px;
+    width:70px;
     text-align: right;
 }
 
@@ -33,4 +33,52 @@
     margin-left: 10px;
     border-radius: 75px;
     object-fit: cover;
+}
+.kasa-group-collapse-logement {
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.kasa-collapse-logement {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border-radius: 10px 10px 5px 5px;
+
+}
+
+.kasa-collapse-logement-equipement {
+    display:flex;
+}
+
+.kasa-collapse-logement-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding-left: 10px;
+    font-size: 18px;
+    padding: 10px 20px 10px 10px;
+}
+
+.kasa-collapse-logement-texte {
+    color:#FF6060;
+    font-size: 18px;
+    background-color: #F7F7F7;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.kasa-collapse-texte {
+    margin-top:0px;
+}
+
+.kasa-collapse-logement-description{
+    width:50%;
+}
+
+.kasa-collapse-details {
+    margin-left: 0px;
+    margin-right:0px;
 }

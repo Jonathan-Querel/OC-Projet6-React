@@ -5,7 +5,7 @@ function Footer(props) {
   return (
     <div className="kasa-footer">
       <img className="kasa-footer-logo" src={img_footer} alt="Logo" />
-      <div className="kasa-footer-title">{titre_footer}</div>
+      <h3 className="kasa-footer-title">{titre_footer}</h3>
     </div>
   );
 }

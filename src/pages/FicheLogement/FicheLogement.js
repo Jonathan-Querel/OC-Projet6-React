@@ -1,26 +1,10 @@
 import { useParams } from "react-router-dom";
 
-import Tag from "../../components/Tag/Tag.js";
-
 import Logements from "../../Logements.js";
+import Carrousel from "../../components/Carrousel/Carrousel.js";
+import Tag from "../../components/Tag/Tag.js";
+import Collapse from "../../components/Collapse/Collapse.js";
 import "./FicheLogement.css";
-import CollapseLogement from "../../components/CollapseLogement/CollapseLogement.js";
-
-// const textes = [
-//   {
-//     titre: "Fiabilité",
-//     description: "Description",
-//     type: "Texte"
-//   },
-//   {
-//     titre: "Fiabilité",
-//     description: "Description",
-//   },
-//   {
-//     titre: "Fiabilité",
-//     description: "Description",
-//   },
-// ];
 
 function Fiche_logement() {
   const { id } = useParams();
@@ -31,7 +15,7 @@ function Fiche_logement() {
       <div className="fiche-logement">
         <div className="kasa-logement-group-description">
           <div className="kasa-logement-group-titre">
-            <p className="kasa-carrousel-titre">{Logement.title}</p>
+            <h2 className="kasa-carrousel-titre">{Logement.title}</h2>
             <p className="kasa-carrousel-sous-titre">{Logement.location}</p>
           </div>
           <div className="kasa-logement-group-profil">
@@ -48,9 +32,6 @@ function Fiche_logement() {
             {Logement.tags.map((data, index) => (
               <Tag key={index} titre_tag={data}></Tag>
             ))}
-            {/* <Tag type_tag="Cozy" titre_tag="Cozy" />
-            <Tag type_tag="Canal" titre_tag="Canal" />
-            <Tag type_tag="Paris 10" titre_tag="Paris 10" /> */}
           </div>
           <div className="kasa-tag-star">
             {Logement.rating < 1 ? (
@@ -82,18 +63,22 @@ function Fiche_logement() {
         </div>
         <div className="kasa-group-collapse-logement">
           <div className="kasa-collapse-logement-description">
-            <CollapseLogement
-              type_collapse_logement="Description"
-              titre_collapse_logement="Description"
-              description_collapse_logement="Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au coeur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à 1 station de la gare de l'est (7 minutes à pied)."
+            <Collapse
+              type_collapse="Text"
+              titre_collapse="Description"
+              description_collapse={Logement.description}
             />
           </div>
+
           <div className="kasa-collapse-logement-equipement">
-            <CollapseLogement
-              type_collapse_logement="Equipements"
-              titre_collapse_logement="Équipements"
-              description_collapse_logement="Climatisation Wifi Cuisine Espace de travail Fer à repasser Sèche-cheveux Cintres"
-            />
+            {Logement.equipments.map((data, index) => (
+              <Collapse
+                type_collapse="List"
+                titre_collapse="Equipements"
+                key={index}
+                description_collapse={data}
+              />
+            ))}
           </div>
         </div>
       </div>
@@ -102,6 +87,22 @@ function Fiche_logement() {
 }
 
 export default Fiche_logement;
+
+// const textes = [
+//   {
+//     titre: "Fiabilité",
+//     description: "Description",
+//     type: "Texte"
+//   },
+//   {
+//     titre: "Fiabilité",
+//     description: "Description",
+//   },
+//   {
+//     titre: "Fiabilité",
+//     description: "Description",
+//   },
+// ];
 
 /*<div className="fiche-logement-carrousel">
           <div className="kasa-carrousel-chevron">

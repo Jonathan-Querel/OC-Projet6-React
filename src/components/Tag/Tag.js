@@ -5,7 +5,7 @@ function Tag(props) {
 
   return (
     <div className="kasa-tag">
-      <div className="kasa-tag-title">{titre_tag}</div>
+      <p className="kasa-tag-title">{titre_tag}</p>
     </div>
   );
 }

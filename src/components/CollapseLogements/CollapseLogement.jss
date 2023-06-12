@@ -18,9 +18,9 @@ function Collapse_logement(props) {
                 <i className="fa-solid fa-chevron-up"></i>
               </div>
             </summary>
-            <div className="kasa-collapse-logement-texte">
+            <p className="kasa-collapse-logement-texte">
               {description_collapse_logement}
-            </div>
+            </p>
           </details>
         </div>
       </>
@@ -38,9 +38,9 @@ function Collapse_logement(props) {
                 <i className="fa-solid fa-chevron-up"></i>
               </div>
             </summary>
-            <div className="kasa-collapse-logement-texte">
+            <p className="kasa-collapse-logement-texte">
               {description_collapse_logement}
-            </div>
+            </p>
           </details>
         </div>
       </>

@@ -7,7 +7,6 @@ function Collapse(props) {
 
   const handleClick = () => {
     setOpen(!isOpen);
-    console.log(isOpen);
   };
 
   if (type_collapse === "Text") {
@@ -26,7 +25,7 @@ function Collapse(props) {
               </div>
             </summary>
             <div className="kasa-collapse">
-              <div className="kasa-collapse-texte">{description_collapse}</div>
+              <p className="kasa-collapse-texte">{description_collapse}</p>
             </div>
           </details>
         </div>
@@ -34,17 +33,26 @@ function Collapse(props) {
     );
   }
 
-  if (type_collapse === "Equipements") {
+  if (type_collapse === "List") {
     return (
       <div className="kasa-collapse">
-        <h3 className="kasa-collapse-title">{titre_collapse}</h3>
-        <div className="kasa-collapse-chevron">
-          {isOpen ? (
-            <i className="fa-solid fa-chevron-down"></i>
-          ) : (
-            <i className="fa-solid fa-chevron-up"></i>
-          )}
-        </div>
+        <details className="kasa-collapse-details" onClick={handleClick}>
+          <summary className="kasa-collapse-title">
+            {titre_collapse}
+            <div className="kasa-collapse-chevron">
+              {isOpen ? (
+                <i className="fa-solid fa-chevron-down"></i>
+              ) : (
+                <i className="fa-solid fa-chevron-up"></i>
+              )}
+            </div>
+          </summary>
+          <div className="kasa-collapse">
+            <ul className="kasa-collapse-texte">
+              <li>{description_collapse}</li>
+            </ul>
+          </div>
+        </details>
       </div>
     );
   }
