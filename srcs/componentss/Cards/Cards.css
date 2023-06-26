@@ -1,0 +1,39 @@
+.kasa-group-all-cards {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+}
+.kasa-group-card {
+    display: flex;
+    justify-content: space-around;
+    width: 33%;
+}
+
+.kasa-card {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.kasa-card-title {
+    position: absolute;
+    font-size: 18px;
+    width: 200px;
+    color: #FFFFFF;
+    padding-top: 270px;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.kasa-card-img {
+    object-fit: cover;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+}

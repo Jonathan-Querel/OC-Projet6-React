@@ -1,0 +1,24 @@
+.kasa-banner {
+    display:flex;
+    justify-content: center;
+    padding-top: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.kasa-banner-title {
+    position: absolute;
+    z-index: 1;
+    padding-top: 50px;
+    font-size: 48px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.kasa-banner-img {
+    object-fit: cover;
+    filter: brightness(80%);
+    width: 100%;
+    height: 230px;
+    border-radius: 25px;
+}

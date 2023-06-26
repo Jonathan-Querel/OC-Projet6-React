@@ -1,0 +1,13 @@
+.kasa-banner-apropos {
+    padding-top: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.kasa-banner-img-apropos {
+    object-fit: cover;
+    filter: brightness(80%);
+    width:100%;
+    height: 230px;
+    border-radius: 25px;
+}
