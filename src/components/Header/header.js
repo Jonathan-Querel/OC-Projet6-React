@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header(props) {
-  const { img } = props;
+  const { logo } = props;
   return (
     <div className="kasa-header">
-      <img className="kasa-header-logo" src={img} alt="Logo" />
-      <nav className="kasa-header-lien">
+      <img src={logo} alt="Logo Kasa" />
+      <nav className="kasa-header-lien-navigation">
         <Link to="/">Accueil</Link>
         <Link to="/Apropos">A propos</Link>
       </nav>

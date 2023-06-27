@@ -1,17 +1,7 @@
 .kasa-collapse-details {
-    border-radius: 5px;
-    margin-left: 210px;
-    margin-right: 210px;
     margin-top: 40px;
     margin-bottom: 40px;
-}
-
-.kasa-collapse-texte {
-    color: #FF6060;
-    font-size: 22px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #F7F7F7;
+    width: 90%;
 }
 
 summary {
@@ -19,15 +9,31 @@ summary {
     color:#FFFFFF;
     border-radius: 5px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .kasa-collapse-title {
-    display:flex;
-    justify-content: space-between;
     padding: 10px 20px 10px 15px;
-    font-size:24px;
-    font-weight:500;
-    background-color: #FF6060;
-    color:#FFFFFF;
-    border-radius: 5px;
+    font-weight: 500;
+}
+
+.kasa-collapse-description {
+    font-size: 22px;
+    color: #FF6060;
+    padding: 20px;
+    background-color: #F7F7F7;
+}
+
+.kasa-collapse-description li{
+    list-style: none;
+}
+
+details[open] summary .fa-chevron-up {
+    transform: rotate(-180deg);
+}
+
+.fa-chevron-up {
+    margin-right: 20px;
+    transition: all 0.7s;
 }

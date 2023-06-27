@@ -5,7 +5,11 @@ function Banner(props) {
   return (
     <div className="kasa-banner">
       <h1 className="kasa-banner-title">{titre_banner_home}</h1>
-      <img className="kasa-banner-img" src={img_banner_home} alt="Bannière" />
+      <img
+        className="kasa-banner-img"
+        src={img_banner_home}
+        alt="Bannière accueil"
+      />
     </div>
   );
 }

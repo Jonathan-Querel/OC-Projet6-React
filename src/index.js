@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home.js";
@@ -8,21 +8,24 @@ import Error from "./pages/Error/Error";
 import Footer from "./components/Footer/Footer";
 import FicheLogement from "./pages/FicheLogement/FicheLogement.js";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <React.StrictMode>
     <Router>
-      <Header img="../assets/logo_header_kasa.png" />
+      <Header logo="../assets/logo_header_kasa.png" />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/APropos" element={<APropos />} />
         <Route path="/FicheLogement/:id" element={<FicheLogement />} />
         <Route path="*" element={<Error />} />
       </Routes>
+
       <Footer
-        titre_footer="© 2020 Kasa. All rights reserved"
-        img_footer="../assets/logo_footer_kasa.png"
+        logo_footer="../assets/logo_footer_kasa.png"
+        texte_footer="© 2020 Kasa. All rights reserved"
       />
     </Router>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );

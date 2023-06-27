@@ -9,7 +9,8 @@ function Home() {
         titre_banner_home="Chez vous, partout et ailleurs"
         img_banner_home="assets/photo_banner_home.png"
       />
-      <div className="kasa-group-logement">
+
+      <div className="kasa-group-all-cards">
         {Logements.map((data, index) => (
           <div className="kasa-group-card" key={index}>
             <a href={"FicheLogement/" + data.id}>
