@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
+import Header from "./components/Header/header";
 import Home from "./pages/Home/Home.js";
-import APropos from "./pages/APropos/APropos";
+import APropos from "./pages/APropos/APropos.js";
 import Error from "./pages/Error/Error";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer/footer";
 import FicheLogement from "./pages/FicheLogement/FicheLogement.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

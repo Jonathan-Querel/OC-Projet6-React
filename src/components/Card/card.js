@@ -1,4 +1,4 @@
-import "./Card.css";
+import "./card.css";
 
 function Card(props) {
   const { titre_card, img_card } = props;
