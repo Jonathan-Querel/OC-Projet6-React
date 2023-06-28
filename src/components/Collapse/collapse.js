@@ -1,4 +1,4 @@
-import "./Collapse.css";
+import "./collapse.css";
 
 function Collapse(props) {
   const { type_collapse, titre_collapse, description_collapse } = props;

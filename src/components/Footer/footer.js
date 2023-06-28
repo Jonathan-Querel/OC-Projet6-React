@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "./footer.css";
 
 function Footer(props) {
   const { texte_footer, logo_footer } = props;
