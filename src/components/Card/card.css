@@ -1,6 +1,4 @@
 .kasa-group-all-cards {
-    margin-left: 100px;
-    margin-right: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -36,4 +34,32 @@
     width: 340px;
     height: 340px;
     border-radius: 10px;
+}
+
+/* Media Queries */
+
+/* Media Queries Tablette */
+
+@media screen and (max-width:1055px) {
+
+.kasa-group-all-cards {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.kasa-group-card {
+width: 100%;
+}
+
+.kasa-card {
+    padding-top: 0px;
+}
+
+.kasa-card-img {
+    width:100%;
+}
 }

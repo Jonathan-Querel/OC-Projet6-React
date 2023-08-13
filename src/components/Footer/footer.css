@@ -14,3 +14,15 @@
     font-weight: 500;
     font-size: 24px;
 }
+
+/* Media Queries */
+
+/* Media Queries Tablette */
+
+/*@media screen and (max-width:1055px) {
+
+.kasa-footer-texte {
+    width: 40%;
+}
+
+}*/

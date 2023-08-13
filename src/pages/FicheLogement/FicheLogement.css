@@ -84,3 +84,35 @@
     display: flex;
     justify-content: flex-end;
 }
+
+
+@media screen and (max-width:990px) {
+
+.fiche-logement {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.kasa-logement-group-collapse{
+flex-direction: column;
+}
+
+.kasa-collapse-logement-description{
+    width: 100%;
+}
+
+.kasa-collapse-logement-equipement{
+    width: 100%;
+}
+
+.kasa-collapse-list {
+    display: block;
+
+}
+
+.kasa-logement-titre {
+    font-size: 20px;
+
+}
+
+}

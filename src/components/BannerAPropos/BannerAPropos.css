@@ -11,3 +11,18 @@
     height: 230px;
     border-radius: 25px;
 }
+
+
+
+/* Media Queries */
+
+/* Media Queries Tablette */
+
+@media screen and (max-width:1055px) {
+
+.kasa-banner-apropos {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+}

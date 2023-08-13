@@ -37,3 +37,16 @@ details[open] summary .fa-chevron-up {
     margin-right: 20px;
     transition: all 0.7s;
 }
+
+
+/* Media Queries */
+
+/* Media Queries Tablette */
+
+@media screen and (max-width:1055px) {
+
+.kasa-collapse-details {
+    width: auto;
+}
+    
+}

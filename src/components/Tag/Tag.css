@@ -8,3 +8,15 @@
     font-size: 14px;
     color: #FFFFFF;
 }
+
+/* Media Queries */
+
+/* Media Queries Tablette */
+
+@media screen and (max-width:1055px) {
+
+.kasa-tag-title {
+    font-size: 12px;
+}
+            
+}
