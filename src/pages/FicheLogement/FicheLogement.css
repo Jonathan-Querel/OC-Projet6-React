@@ -62,8 +62,9 @@
 
 .kasa-star {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 10%;
+    gap:10%;
 }
 
 /* Css pour les collapses Description et Equipements */
@@ -86,11 +87,15 @@
 }
 
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:1255px) {
 
 .fiche-logement {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.kasa-logement-sous-titre {
+    font-size: 14px;
 }
 
 .kasa-logement-group-collapse{
@@ -107,12 +112,21 @@ flex-direction: column;
 
 .kasa-collapse-list {
     display: block;
-
 }
 
 .kasa-logement-titre {
     font-size: 20px;
 
+}
+
+.kasa-group-tag-star {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.kasa-star {
+    padding-top: 20px;
+    justify-content: flex-start;
 }
 
 }

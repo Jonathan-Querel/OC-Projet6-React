@@ -13,10 +13,10 @@
 
 /* Media Queries Tablette */
 
-@media screen and (max-width:1055px) {
+@media screen and (max-width:1255px) {
 
 .kasa-tag-title {
     font-size: 12px;
 }
-            
+         
 }

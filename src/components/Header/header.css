@@ -23,25 +23,19 @@
 
 /* Media Queries Tablette */
 
-@media screen and (max-width:1055px) {
+@media screen and (max-width:1255px) {
 
 .kasa-header {
     margin-left: 0px;
-    margin-right:0px;
+    margin-right:20px;
 }
 
 nav {
     display:flex;
 }
 
-.kasa-header-lien-navigation a {
-    display: flex;
-    gap: 20px;
-    margin-right: 20px;
-}
-
 .kasa-header img {
-    width: 40%;
+    width: 100px;
     margin-left: 20px;
 }
 

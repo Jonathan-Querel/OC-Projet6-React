@@ -43,7 +43,7 @@ details[open] summary .fa-chevron-up {
 
 /* Media Queries Tablette */
 
-@media screen and (max-width:1055px) {
+@media screen and (max-width:1255px) {
 
 .kasa-collapse-details {
     width: auto;

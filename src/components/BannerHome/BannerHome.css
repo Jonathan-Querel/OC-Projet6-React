@@ -28,12 +28,12 @@
 
 /* Media Queries Tablette */
 
-@media screen and (max-width:1055px) {
+@media screen and (max-width:1255px) {
 
 .kasa-banner {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .kasa-banner-title {

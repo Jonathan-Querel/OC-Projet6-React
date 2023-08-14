@@ -1,4 +1,6 @@
 .kasa-group-all-cards {
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -40,7 +42,7 @@
 
 /* Media Queries Tablette */
 
-@media screen and (max-width:1055px) {
+@media screen and (max-width:1255px) {
 
 .kasa-group-all-cards {
     margin-left: 20px;

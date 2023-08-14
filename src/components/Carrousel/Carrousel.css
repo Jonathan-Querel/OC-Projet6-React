@@ -5,7 +5,7 @@
 .slide p {
     position: absolute;
     top: 530px;
-    left: 935px;
+    left: 750px;
     color: #FFFFFF;
 }
 
@@ -24,9 +24,8 @@
 
 .fa-chevron-right {
     position: absolute;
-    left: 1640px;
+    left: 1190px;
     top: 160px;
-    right: 20px;
 }
 
 .fa-chevron-left {
@@ -43,8 +42,13 @@
 
 .fa-chevron-right {
     position: absolute;
-    left: 360px;
+    left: 390px;
     top: 160px;
 }
+
+.slide p {
+    display: none;
+}
+
         
 }
