@@ -19,10 +19,11 @@
 
 /* Media Queries Tablette */
 
-/*@media screen and (max-width:1055px) {
+@media screen and (max-width:1055px) {
 
 .kasa-footer-texte {
-    width: 40%;
+    width: 30%;
+    margin: 0 auto;
 }
 
-}*/
+}

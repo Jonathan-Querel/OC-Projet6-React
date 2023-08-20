@@ -2,10 +2,14 @@
     margin-top: 55px;
 }
 
+.slide {
+    position: relative;
+}
+
 .slide p {
     position: absolute;
-    top: 530px;
-    left: 750px;
+    bottom: 40px;
+    left: 50%;
     color: #FFFFFF;
 }
 
@@ -17,14 +21,13 @@
 }
 
 .kasa-carrousel-btn {
-    position: absolute;
     font-size: 80px;
     color: #FFFFFF;
 }
 
 .fa-chevron-right {
     position: absolute;
-    left: 1190px;
+    right: 20px;
     top: 160px;
 }
 
@@ -40,15 +43,8 @@
 
 @media screen and (max-width:1055px) {
 
-.fa-chevron-right {
-    position: absolute;
-    left: 390px;
-    top: 160px;
-}
-
 .slide p {
     display: none;
 }
 
-        
 }

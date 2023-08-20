@@ -30,20 +30,19 @@ function Carrousel(props) {
   }
 
   return (
-    <div className="kasa-carrousel">
-      <div className="kasa-carrousel-btn">
-        <i onClick={previousSlide} className="fa-solid fa-chevron-left"></i>
-        <i onClick={nextSlide} className="fa-solid fa-chevron-right"></i>
-      </div>
-
-      <div className="slide">
-        <img
-          src={img_carrousel[carrouselIndex]}
-          alt={img_carrousel[carrouselIndex]}
-        />
-        <p>
-          {carrouselIndex + 1}/{nombreSlide}
-        </p>
+    <div className="slide">
+      <p>
+        {carrouselIndex + 1}/{nombreSlide}
+      </p>
+      <img
+        src={img_carrousel[carrouselIndex]}
+        alt={img_carrousel[carrouselIndex]}
+      />
+      <div className="kasa-carrousel">
+        <div className="kasa-carrousel-btn">
+          <i onClick={previousSlide} className="fa-solid fa-chevron-left"></i>
+          <i onClick={nextSlide} className="fa-solid fa-chevron-right"></i>
+        </div>
       </div>
     </div>
   );

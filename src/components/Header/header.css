@@ -7,10 +7,14 @@
     margin-top: 40px;;
 }
 
+.kasa-header-lien-navigation {
+    display: flex;
+    gap: 5vw;
+}
+
 .kasa-header-lien-navigation a {
     text-decoration-line: none;
-    color: #FF6060;;
-    padding-left: 60px;
+    color: #FF6060;
     font-weight: 500;
 }
 
@@ -32,6 +36,7 @@
 
 nav {
     display:flex;
+    gap: 15px;
 }
 
 .kasa-header img {
